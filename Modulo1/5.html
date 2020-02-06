@@ -1,0 +1,30 @@
+
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title>Módulo 01 - Exercício 4 </title>
+  </head>
+  <body>
+    <script>
+      
+      var usuarios = [
+ {
+ nome: "Diego",
+ habilidades: ["Javascript", "ReactJS", "Redux"]
+ },
+ {
+ nome: "Gabriel",
+ habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+ }
+];
+function nomeHabilidade(usuarios) {
+  for (usuario of usuarios  ) {
+   console.log("O " + usuario.nome + " possui as habilidades: " + usuario.habilidades.join(","))
+  }
+}
+
+console.log(nomeHabilidade(usuarios));
+ 
+    </script>
+  </body>
+</html>
