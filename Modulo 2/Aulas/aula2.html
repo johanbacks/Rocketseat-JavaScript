@@ -1,0 +1,26 @@
+
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title>Aula 2 - Modulo 2 </title>
+  </head>
+  <body>
+    <div id="app">
+     <input type="text" name="nome" />
+     <button class="botao" > Adicionar </button>
+    </div>
+    
+    <script>
+      var inputElement = document.querySelector("input[name=nome]");
+     
+
+      var btnElement = document.querySelector("button.botao");
+
+      btnElement.onclick = function() {
+        var text = inputElement.value;
+        alert(text);
+      }
+      
+    </script>
+  </body>
+</html>
