@@ -3,16 +3,27 @@
   <meta charset="UTF-8">
   <head>
     <title>Aula 1 - Modulo 2</title>
+    <!-- Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+    vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+    aparecer na tela. -->
+    
   </head>
   <body>
-    <div id="app">
-     <button onclick="mostraAlerta()"class="botao" > Adicionar </button>
-    </div>
+    <button class="button">Add new Box</button>
+    <div id="box"></div>
+
     
     <script>
-     function mostraAlerta() {
-       alert("Botão Clicado")
-     }
+     
+
+     var boxElement = document.querySelector("#box");;
+      boxElement.style.width = 100;
+      boxElement.style.height = 100;
+      boxElement.style.top = "-4px";
+     
+
+      boxElement.style.backgroundColor = "#000000";
+     
     </script>
   </body>
 </html>
