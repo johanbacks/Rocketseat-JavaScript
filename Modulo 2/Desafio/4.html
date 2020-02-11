@@ -2,28 +2,43 @@
 <html>
   <meta charset="UTF-8">
   <head>
-    <title>Desafio 3 - Modulo 2</title>
+    <title>Desafio 4  - Modulo 2</title>
    
     
   </head>
   <body>
-    <input type="text" name="nome">
-    <button class="botao"onClick="adicionar()">Adicionar</button>
-   <ul></ul>
+    <ul></ul>
+    <input type="text" name="nome" >
+    <button onClick="adicionar()">Adicionar</button>
+  
     
     <script>
-  var inputName =  document.querySelector("input[name=nome");
-  var btnElement = document.querySelector("button.botao")
-  var nomes = ["Diego", "Gabriel", "Lucas"];
+ var nomes = ["Diego", "Gabriel", "Lucas"];
+ var listElement = document.querySelector("ul");
+ var inputElement = document.querySelector("input");
 
-  btnElement.onclick = function() {
-    var  teste= inputName.value;
- 
-    alert(teste);
-  }
+ /*for (nome of nomes) {
+   var liElement = document.createElement("li")
+   var textElement = document.createTextNode(nome);
+   liElement.appendChild(textElement);
+   listElement.appendChild(liElement); 
 
+ }*/
+ function addNew(item) {
+   var liElement = document.createElement("li");
+   var textElement = document.createTextNode(item);
 
-
+   liElement.appendChild(textElement);
+   listElement.appendChild(liElement);
+   
+ }
+ function adicionar(){
+   addNew(inputElement.value)
+   console.log(value)
+ }
+for(nome of nomes) {
+  addNew(nome)
+}
 
     </script>
   </body>
